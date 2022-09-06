@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+function validateForm(){
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == ""){
+        alert("Name must be filled out");
+        return false;
+    }
+    var y = document.forms["myForm"]["email"].value;
+    if (y == ""){
+        alert("Email must be filled out");
+        return false;
+    }
+    var p = document.forms["myForm"]["Pnumber"].value;
+    if (p == ""){
+        alert("Phone number must be filled out");
+        return false;
+    }
+}
+</script>
+</head>
+<body>
+    <form name="myForm" action="action_page.html" onsubmit="return validateForm()" method="post">
+        Name: <input type="text" name="fname">
+        Email: <input type="text" name="email">
+        Phone-number: <input type="number" name="Pnumber">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

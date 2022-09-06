@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #demo{
+        max-height: 100px;
+        overflow-y: hidden;
+        transition: all 1s;
+        list-style: none;
+        background-color: brown;
+        border-radius: 10px;
+        width: 6rem;
+        font-weight: bolder;
+        font-style: oblique;
+    }
+</style>
+<body>
+    <ul id="demo">
+        <li>Football</li>
+        <li>Volleyball</li>
+        <li>Basketball</li>
+    </ul>
+    <div>
+        <button onclick="slideUp()">Slide Up</button>
+        <button onclick="slideDown()">Slide Down</button>
+    </div>
+    <script>
+        function slideUp(){
+            var elem = document.getElementById("demo");
+            elem.style.maxHeight = "0px";
+        }
+        function slideDown(){
+            var elem = document.getElementById("demo");
+            elem.style.maxHeight = "100px";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Enter your matric no and click Submit:</p>
+    <input type="number" id="id1" min="2101021100" max="21010211300" required>
+    <button onclick="myFunction()">Submit</button>
+    <p>if the matric no is not for computer science student, an error message will be displayed.</p>
+    <p id="demo"></p>
+    <script>
+        function myFunction(){
+            var inpObj = document.getElementById("id1");
+            if (!inpObj.checkValidity()){
+                document.getElementById("demo").innerHTML = "You must input correct matric no.";
+            } else{
+                document.getElementById("demo").innerHTML = "You are ND1 computer science student."
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+#demo{
+    width: 500px;
+    height: 500px;
+    background: #173459;
+    opacity: 1;
+    display: block;
+    transition: all 1s;
+}
+</style>
+<body>
+    <div id="demo"></div>
+    <div>
+        <button onclick="fadeout()"> Fade Out </button>
+        <button onclick="fadein()"> Fade In </button>
+    </div>
+    <script>
+        function fadeout(){
+            var elem = document.getElementById("demo");
+            elem.style.opacity = 0;
+            setTimeout(function(){
+                elem.style.display = "none";
+            },100);
+        }
+
+        function fadein(){
+            var elem = document.getElementById("demo");
+            elem.style.display = "block";
+            setTimeout(function(){
+                elem.style.opacity = 1;
+            },10);
+        }
+    </script>
+</body>
+</html>

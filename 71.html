@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="myFunc();">Show Favourite Hobby</button>
+    <p id="demo">My id is <b>demo</b>. The <b>hobby</b> variable will not be printed here.</p>
+    <script>
+        function myFunc(){
+            var hobby = "Coding";
+            alert(hobby);
+        }
+        document.getElementById("demo").innerHTML = hobby;
+    </script>
+</body>
+</html>

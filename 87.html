@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #demo3{
+        font-size: 30px;
+        font-style: normal;
+        font-weight: bolder;
+    }
+    #demo2{
+        font-size: 20px;
+        color: chocolate;
+        font-weight: bolder;
+        font-style: italic;
+    }
+    #demo3{
+        font-size: 15px;
+        font-style: normal;
+    }
+</style>
+<body>
+    <h1 id="demo1">Hi Programmer!</h1>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <script>
+        document.getElementById("demo3").innerHTML=
+        document.getElementById("demo2").innerHTML=
+        document.getElementById("demo1").innerHTML;
+    </script>
+</body>
+</html>

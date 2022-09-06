@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript String Method</h2>
+    <h3>Replace "Sites" with "Shops" in the paragraph below:</h3>
+    <button onclick="myWord()">Click it</button>
+    <p id="demo">Please visit Our Sites!</p>
+    <script>
+        function myWord() {
+            var str = document.getElementById("demo").innerHTML;
+            var wrd = str.replace("Sites","Shops");
+            document.getElementById("demo").innerHTML = wrd;
+        }
+    </script>
+</body>
+</html>

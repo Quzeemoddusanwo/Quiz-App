@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(41, 7, 7);
+}
+.container{
+    margin: 200px;
+    margin-left: 30%;
+    background: rgb(0, 0, 0);
+    width: 530px;
+    height: 350px;
+    border: 3px solid rgb(252, 114, 2);
+    border-radius: 10px;
+}
+p{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 19px;
+    font-weight: bolder;
+    color: white;   
+}
+form{
+    padding: 20px;
+    margin-top: 30px;
+    color: rgb(253, 116, 4);
+    font-weight: bold;
+    font-style: italic;
+}
+input{
+    height: 25px;
+    background: rgb(182, 182, 164);
+    border: none;
+    border-radius: 5px;
+}
+button{
+    margin-left: 40%;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid white;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    font-style: italic;
+    background: rgb(248, 113, 2);
+}

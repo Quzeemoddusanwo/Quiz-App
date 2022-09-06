@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="myBtn">Click me</button>
+    <script>
+        var x = document.getElementById("myBtn");
+        x.addEventListener("click", myFunction);
+        x.addEventListener("click", myFunction1);
+        x.addEventListener("click", myFunction2);
+
+        function myFunction(){
+            alert("Hello World!");
+        }
+        function myFunction1(){
+            alert("The function was also executed!");
+        }
+        function myFunction2(){
+            alert("The function was also carried out!");
+        }
+    </script>
+</body>
+</html>
